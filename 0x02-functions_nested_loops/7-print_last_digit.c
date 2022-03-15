@@ -56,5 +56,5 @@ int print_last_digit(int n)
 	mod = _abs(n % 10);
 
 	_putchar(mod + '0');
-	return (1);
+	return (mod);
 }
