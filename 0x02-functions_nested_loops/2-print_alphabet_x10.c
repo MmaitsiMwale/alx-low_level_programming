@@ -14,7 +14,7 @@ void print_alphabet(void)
 	int mul = 10;
 	int iter;
 
-	for (int iter = 1; iter <= mul; iter++)
+	for (iter = 1; iter <= mul; iter++)
 	{
 		for (start = 'a'; start <= end; start++)
 		{
