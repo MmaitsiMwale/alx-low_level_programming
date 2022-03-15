@@ -15,5 +15,6 @@ int _islower(int c)
 	else if (c >= 97 && c <= 122)
 		return (1);
 	_putchar('\n');
+	return (0);
 }
 
