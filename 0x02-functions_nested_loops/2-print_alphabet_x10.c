@@ -12,6 +12,7 @@ void print_alphabet(void)
 	char start;
 	char end = 'z';
 	int mul = 10;
+	int iter;
 
 	for (int iter = 1; iter <= mul; iter++)
 	{
