@@ -9,12 +9,10 @@
 int main(void)
 {
 	char *word = "_putchar";
-	int iter = 0;
 
-	while (iter <= (int)sizeof(word) - 1)
+	while (*word)
 	{
-		_putchar(word[iter]);
-		iter++;
+		_putchar(*word++);
 	}
 	_putchar('\n');
 	return (0);
