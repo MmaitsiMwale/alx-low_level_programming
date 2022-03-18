@@ -23,6 +23,6 @@ int main(void)
 		}
 		iter++;
 	}
-	printf("%d", multiples);
+	printf("%d\n", multiples);
 	return (0);
 }
