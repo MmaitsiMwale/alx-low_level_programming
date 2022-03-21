@@ -14,8 +14,9 @@ void puts2(char *str)
 	{
 		if (iter % 2 == 0)
 		{
-			_putchar(str[iter]);
+			_putchar(*(str + iter));
 		}
 		iter++;
 	}
+	_putchar(10);
 }
