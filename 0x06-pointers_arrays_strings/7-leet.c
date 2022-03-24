@@ -8,22 +8,23 @@
 
 char *leet(char *str)
 {
+	char *ptr = str;
 	char key[] = {'A', 'E', 'O', 'T', 'L'};
 	int value[] = {4, 3, 0, 7, 1};
 	unsigned int i;
 
-	while (*str)
+	while (*ptr)
 	{
 		for (i = 0; i < sizeof(key) / sizeof(char); i++)
 		{
-			if (*str == key[i] || *str == key[i] + 32)
+			if (*ptr == key[i] || *ptr == key[i] + 32)
 			{
-				*str = 48 + value[i];
+				*ptr = 48 + value[i];
 			}
 		}
-		str++;
+		ptr++;
 	}
 
-	return (str);
+	return (ptr);
 
 }
