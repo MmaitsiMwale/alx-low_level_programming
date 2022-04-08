@@ -15,6 +15,8 @@ int _strlen(char *s)
 
 	while (*s)
 		s++;
+	printf("length of s: %d\n", s);
+	printf("%d", s-ptr);
 	return (s - ptr);
 }
 
@@ -35,9 +37,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	len1 = _strlen(s1);
+	print("len of s1: %d\n", len1);
 	len2 = _strlen(s2);
+	print("len of s2: %d\n", len2);
 	if (n > len2)
 		n = len2;
+		print("n is greater or equal to the length of s2 so we use the entire string s2");
 	size = len1 + n;
 	ptr = malloc(sizeof(char) * size + 1);
 	if (!ptr)

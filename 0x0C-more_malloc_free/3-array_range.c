@@ -13,14 +13,13 @@ int *array_range(int min, int max)
 	int size, iter;
 
 	iter = 0;
-
 	if (min > max)
 		return (NULL);
-	size = max - min;
-	int_array = malloc(sizeof(int) * size + 1);
+	size = (max - min) + 1;
+	int_array = malloc(sizeof(int) * size);
 	if (!int_array)
 		return (NULL);
-	while (iter < size + 1)
+	while (iter < size)
 	{
 		int_array[iter] = min++;
 		iter++;
