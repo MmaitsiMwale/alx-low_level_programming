@@ -12,11 +12,21 @@
 
 int _strlen(char *s)
 {
+	int count;
+	count = 0;
+	while (*s)
+	{
+		s++;
+		count++;
+	}
+	return (count);
+	/*
 	char *ptr = s;
 
 	while (*s)
 		s++;
 	return (s - ptr);
+	*/
 }
 
 /**
@@ -30,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, size, len1, len2;
 	char *ptr;
-
+	
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
@@ -53,17 +63,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (ptr);
 }
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char *concat;
-
-    concat = string_nconcat("Best ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
-    return (0);
-}
