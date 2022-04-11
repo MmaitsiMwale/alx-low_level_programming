@@ -59,7 +59,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *copy_owner = malloc(sizeof(char) * _strlen(owner) + 1);
 
 	dog_t *another_dog = malloc(sizeof(dog_t));
-	
+
 	if (!another_dog)
 		return (NULL);
 	another_dog->name = _strcpy(copy_name, name);
