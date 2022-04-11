@@ -55,8 +55,8 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *copy_name = malloc(sizeof(char) * _strlen(name) + 1);
-	char *copy_owner = malloc(sizeof(char) * _strlen(owner) + 1);
+	char *copy_name = malloc(sizeof(char) * _strlen(name));
+	char *copy_owner = malloc(sizeof(char) * _strlen(owner));
 
 	dog_t *another_dog = malloc(sizeof(dog_t));
 
